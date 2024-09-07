@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Notes App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/assets/index-H1u253tQ.css">
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-blue-800 text-white py-4 px-6 flex justify-between items-center fixed top-0 w-full shadow-md z-50">
+    <div class="flex items-center">
+      <div class="bg-white text-blue-800 font-bold h-10 w-10 flex justify-center items-center rounded-full">
+        UN
+      </div>
+      <h1 class="text-2xl font-extrabold ml-3">Ultimate Notes App</h1>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto mt-20 px-6">
+    <!-- Add Note Section -->
+    <section id="addNoteSection" class="bg-white p-6 rounded-lg shadow-lg mb-10">
+      <h2 class="text-3xl text-blue-800 font-bold mb-4">Add a New Note</h2>
+      <textarea id="noteText" class="border border-gray-300 p-3 w-full h-24 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800" placeholder="Write your note here..."></textarea>
+      <button id="addNoteBtn" class="mt-3 bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-800">Add Note</button>
+    </section>
+
+    <!-- Notes Display Section -->
+    <section id="notesSection" class="flex flex-col gap-6">
+      <!-- Dynamically added notes will appear here -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white text-center py-4 fixed bottom-0 w-full">
+    &copy; 2024 Ultimate Notes App - Built for better note-taking!
+  </footer>
+
+  <!-- Script -->
+  <script src="/src/js/app.js"></script>
+</body>
+</html>

@@ -1,53 +1,45 @@
-<!-- Notes app using tailwing css  -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ultimate Notes App</title>
-    <link rel="shortcut icon" href="src/Resources/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="src/output.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  </head>
-  <body class="overflow-x-hidden">
-    
-    <header class="flex justify-between items-center shadow-xl overflow-hidden fixed top-0 bg-white w-screen">
-        
-            <div class="h-10 w-10 bg-blue-800 items-center flex justify-center m-3 text-white">
-                UN
-            </div>
-            <h1 class=" text-2xl font-extrabold text-left mr-5 font-primary text-blue-800"> Ultimate Notes App </h1>
-       
-    </header>
-        <!-- home screen or introduction page -->
-<main id="screen" class=" w-screen overflow-hidden mt-10 ">
-        <div id="Home" class="flex flex-col items-center mx-6 mt-12  shadow-xl bg-gradient-to-br from-white to-slate-100 h-screen " >
-            <div id="divUL" class="h-40 w-40 md:h-44 md:w-44 transition bg-blue-800 items-center flex shadow-xl justify-center m-3 text-white text-8xl">
-                UN
-            </div>
-        <h1 class=" font-bold text-blue-800 text-left font-primary text-6xl md:text-8xl "> Ultimate Notes App 
-          
-        <h2 class="text-2xl group text-gray-600 p-2  self-start mt-3 md:self-center md:text-5xl hover:underline transition cursor-pointer w-screen text-left md:text-center"> Write  <span class="material-symbols-outlined -translate-x-3 z-0 md:-translate-x-4 group-hover:translate-x-full transition" style="font-size: 45px;">
-            edit
-            </span>, Save Remember </h2>
-        
-    <div class="flex flex-col items-center group w-screen">
-        <span class="font-black text-xl mt-6 text-blue-900 font-mono ">Scroll Down To Make Your Notes</span>
-        <span class="h-34 material-symbols-outlined text-blue-800 transition mt-1 text-7xl group-hover:translate-y-3"> keyboard_arrow_down</span>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Notes App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-blue-800 text-white py-4 px-6 flex justify-between items-center fixed top-0 w-full shadow-md z-50">
+    <div class="flex items-center">
+      <div class="bg-white text-blue-800 font-bold h-10 w-10 flex justify-center items-center rounded-full">
+        UN
+      </div>
+      <h1 class="text-2xl font-extrabold ml-3">Ultimate Notes App</h1>
     </div>
-        </div>
-<!-- notesPage -->
-        <div id="notesPage">
-            <div id="headingNotes" class="h-3">
+  </header>
 
-            </div>
-            <div id="noteWrite">
+  <!-- Main Content -->
+  <main class="container mx-auto mt-20 px-6">
+    <!-- Add Note Section -->
+    <section id="addNoteSection" class="bg-white p-6 rounded-lg shadow-lg mb-10">
+      <h2 class="text-3xl text-blue-800 font-bold mb-4">Add a New Note</h2>
+      <textarea id="noteText" class="border border-gray-300 p-3 w-full h-24 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800" placeholder="Write your note here..."></textarea>
+      <button id="addNoteBtn" class="mt-3 bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-800">Add Note</button>
+    </section>
 
-            </div>
-            <div id="yourNotes">
+    <!-- Notes Display Section -->
+    <section id="notesSection" class="flex flex-col gap-6">
+      <!-- Dynamically added notes will appear here -->
+    </section>
+  </main>
 
-            </div>
-        </div>
-    </main>
-    
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white text-center py-4 fixed bottom-0 w-full">
+    &copy; 2024 Ultimate Notes App - Built for better note-taking!
+  </footer>
+
+  <!-- Script -->
+  <script src="/src/js/app.js"></script>
+</body>
 </html>

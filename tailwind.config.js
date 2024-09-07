@@ -6,6 +6,11 @@ module.exports = {
       fontFamily:{
         'primary': ['Klee One', 'cursive'],
       },
+      keyframes:{
+       
+      },
+      
+    
     },
   },
   plugins: [],
